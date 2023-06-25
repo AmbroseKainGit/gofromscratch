@@ -14,8 +14,7 @@ func readInput(prompt string) (int, error) {
 	fmt.Print(prompt)
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
-	input := scanner.Text()
-	num, err = strconv.Atoi(input)
+	num, err = strconv.Atoi(scanner.Text())
 	return num, err
 }
 
@@ -29,6 +28,7 @@ func MultiplesOfNumber() {
 		break
 	}
 	for i := 0; i <= 10; i++ {
+		// fmt.Printf("%d x %d = %d \n", num, i, (num * 1))
 		fmt.Println(num, " x ", i, "=", (num * i))
 	}
 
