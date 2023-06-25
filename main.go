@@ -1,13 +1,10 @@
 // Everything start with package (go convention)
 package main
 
-import (
-	"fmt"
-
-	"github.com/AmbroseKainGit/gofromscratch/exercices"
-)
-
 // Function that are capitalized are by default global to the package and all the package that import that package
+import (
+	"github.com/AmbroseKainGit/gofromscratch/input"
+)
 
 func main() {
 	// fmt.Println("Hello world")
@@ -36,8 +33,8 @@ func main() {
 	// default:
 	// 	fmt.Printf("%s \n", os)
 	// }
-	i, message := exercices.ConvertToInt("150")
-	fmt.Println("the number is: ", i)
-	fmt.Println(message)
-
+	// i, message := exercices.ConvertToInt("ff")
+	// fmt.Println("the number is: ", i)
+	// fmt.Println(message)
+	input.InputNumber()
 }
