@@ -2,6 +2,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/AmbroseKainGit/gofromscratch/variables"
 )
 
@@ -10,5 +12,8 @@ import (
 func main() {
 	// fmt.Println("Hello world")
 	// variables.ShowInts()
-	variables.AllVariables()
+	// variables.AllVariables()
+	estado, text := variables.AnythingToText(1500)
+	fmt.Println(estado)
+	fmt.Println(text)
 }

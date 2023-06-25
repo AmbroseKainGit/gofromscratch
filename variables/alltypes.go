@@ -2,6 +2,7 @@ package variables
 
 import (
 	"fmt"
+	"strconv"
 	"time"
 )
 
@@ -19,4 +20,8 @@ func AllVariables() {
 	fmt.Println(State)
 	fmt.Println(Price)
 	fmt.Println(Date)
+}
+
+func AnythingToText(number int) (bool, string) {
+	return true, strconv.Itoa(number)
 }
