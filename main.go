@@ -3,9 +3,7 @@ package main
 
 // Function that are capitalized are by default global to the package and all the package that import that package
 import (
-	"fmt"
-
-	"github.com/AmbroseKainGit/gofromscratch/iterators"
+	"github.com/AmbroseKainGit/gofromscratch/exercices"
 )
 
 func main() {
@@ -41,9 +39,10 @@ func main() {
 	// input.InputNumber()
 
 	// Like a while
-	for {
-		fmt.Println("hola")
-		break
-	}
-	iterators.Iterate()
+	// for {
+	// 	fmt.Println("hola")
+	// 	break
+	// }
+	// iterators.Iterate()
+	exercices.MultiplesOfNumber()
 }
